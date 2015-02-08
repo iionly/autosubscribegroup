@@ -1,10 +1,10 @@
-Autosubscribegroup Plugin for Elgg 1.9
-Latest Version: 1.9.0
-Released: 2013-09-14
+Autosubscribegroup Plugin for Elgg 1.9 + 1.10
+Latest Version: 1.9.1
+Released: 2015-02-02
 Contact: iionly@gmx.de
 Website: https://github.com/iionly
 License: GNU General Public License version 2
-Copyright: (C) iionly 2012-2013, (C) Elbee 2008-2013
+Copyright: (C) iionly 2012-2015, (C) Elbee 2008-2015
 
 
 This plugin allows new users to get joined to groups automatically when they register.
@@ -32,6 +32,10 @@ Press save and you are done.
 
 
 Changelog:
+
+1.9.1:
+
+ - Fix for the autosubscription to work also in case of restricted group or for groups with restricted visibility (anything else than "public").
 
 1.9.0:
 
