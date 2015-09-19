@@ -3,11 +3,11 @@
 	<name>Autosubscribegroup</name>
 	<id>autosubscribegroup</id>
 	<author>iionly (for Elgg 1.8 onwards), RONNEL Jérémy</author>
-	<version>1.9.1</version>
+	<version>1.9.2</version>
 	<category>enhancement</category>
 	<description>This plugin allows new users to get joined to groups automatically when they register.</description>
 	<website>https://github.com/iionly</website>
-	<copyright>(C) iionly 2012-2015, (C) Elbee 2008-2015</copyright>
+	<copyright>(C) iionly 2012, (C) Elbee 2008</copyright>
 	<license>GNU Public License version 2</license>
 	<requires>
 		<type>elgg_release</type>
