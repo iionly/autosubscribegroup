@@ -13,6 +13,9 @@
  * for Elgg 1.8 onwards by iionly (iionly@gmx.de)
  */
 
-echo "<div class='mbm'>" . elgg_echo('autosubscribe:list') . "<br>";
-echo elgg_view('input/text', array('name' => 'params[systemgroups]', 'value' => $vars['entity']->systemgroups));
-echo "</div>";
+echo elgg_view_field([
+	'#type' => 'text',
+	'#label' => elgg_echo('autosubscribe:list'),
+	'name' => 'params[systemgroups]',
+	'value' => $vars['entity']->systemgroups,
+]);

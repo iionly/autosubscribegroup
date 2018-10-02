@@ -34,7 +34,7 @@ function autosubscribegroup_join($event, $object_type, $object) {
 		//auto submit relationships between user & groups
 		//retrieve groups ids from plugin
 		$groups = elgg_get_plugin_setting('systemgroups', 'autosubscribegroup');
-		$groups = split(',', $groups);
+		$groups = explode(',', $groups);
 
 		//for each group ids
 		foreach($groups as $groupId) {
@@ -46,8 +46,18 @@ function autosubscribegroup_join($event, $object_type, $object) {
 				//join group succeed?
 				if ($groupEnt->join($object)) {
 					// Remove any invite or join request flags
-					elgg_delete_metadata(array('guid' => $object->guid, 'metadata_name' => 'group_invite', 'metadata_value' => $groupEnt->guid, 'limit' => false));
-					elgg_delete_metadata(array('guid' => $object->guid, 'metadata_name' => 'group_join_request', 'metadata_value' => $groupEnt->guid, 'limit' => false));
+					elgg_delete_metadata([
+						'guid' => $object->guid,
+						'metadata_name' => 'group_invite',
+						'metadata_value' => $groupEnt->guid,
+						'limit' => false,
+					]);
+					elgg_delete_metadata([
+						'guid' => $object->guid,
+						'metadata_name' => 'group_join_request',
+						'metadata_value' => $groupEnt->guid,
+						'limit' => false,
+					]);
 				}
 			}
 		}

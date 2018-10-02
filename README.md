@@ -1,8 +1,8 @@
-Autosubscribegroup Plugin for Elgg 1.9 - 1.12 and Elgg 2.X
-==========================================================
+Autosubscribegroup Plugin for Elgg 2.3 and newer Elgg 2.X
+=========================================================
 
-Latest Version: 1.9.2  
-Released: 2015-09-19  
+Latest Version: 2.3.3  
+Released: 2018-08-06  
 Contact: iionly@gmx.de  
 Website: https://github.com/iionly  
 License: GNU General Public License version 2  

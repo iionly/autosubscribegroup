@@ -12,6 +12,6 @@
  * for Elgg 1.8 onwards by iionly (iionly@gmx.de)
  */
 
-return array(
-	'autosubscribe:list' => "Groups' ids (separated by commas): "
-);
+return [
+	'autosubscribe:list' => "Groups' ids (separated by commas)",
+];
