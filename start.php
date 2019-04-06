@@ -28,9 +28,10 @@ function autosubscribegroup_init() {
  * auto join group define in plugin settings
  *
  */
-function autosubscribegroup_join($event, $object_type, $object) {
+function autosubscribegroup_join(\Elgg\Event $event) {
+	$object = $event->getObject();
 
-	if (($object instanceof ElggUser) && ($event == 'create') && ($object_type == 'user')) {
+	if (($object instanceof ElggUser) && ($event->getName() == 'create') && ($event->getType() == 'user')) {
 		//auto submit relationships between user & groups
 		//retrieve groups ids from plugin
 		$groups = elgg_get_plugin_setting('systemgroups', 'autosubscribegroup');
