@@ -3,7 +3,7 @@
 	<name>Autosubscribegroup</name>
 	<id>autosubscribegroup</id>
 	<author>iionly (for Elgg 1.8 onwards), RONNEL Jérémy</author>
-	<version>3.3.0</version>
+	<version>3.3.1</version>
 	<category>enhancement</category>
 	<description>This plugin allows new users to get joined to groups automatically when they register.</description>
 	<website>https://github.com/iionly</website>
