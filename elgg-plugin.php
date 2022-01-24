@@ -13,8 +13,16 @@
  * for Elgg 1.8 onwards by iionly (iionly@gmx.de)
  */
 
-require_once(dirname(__FILE__) . '/lib/events.php');
-
 return [
-	'bootstrap' => \AutosubscribegroupBootstrap::class,
+	'plugin' => [
+		'name' => 'Autosubscribegroup',
+		'version' => '4.0.0',
+	],
+	'events' => [
+		'create' => [
+			'user' => [
+				'Autosubscripegroup\Events::autosubscribegroup_join' => [],
+			],
+		],
+	],
 ];
